@@ -1,0 +1,90 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* izquierda y derecha */
+  align-items: center;
+  width: 100%;
+  padding: 0.1rem 2rem;
+  background-color: black;
+  color: white;
+}
+
+.navbar-brand {
+  margin: 0;
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: space-between; /* logo a la izquierda, iconos a la derecha */
+  align-items: center; /* centrado vertical */
+  margin: 0; /* elimina margen */
+  padding: 0; /* elimina relleno interno */
+  width: 100%;
+  height: 60px; /* ocupa todo el ancho */
+  box-shadow: 0 8px 20px rgba(175, 0, 175, 0.3);
+}
+
+.navbar-bg-body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #a26ca5;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.iconos {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.navbar-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-btn:hover {
+  color: #a26ca5;
+}
+
+.brave {
+  display: block;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 9px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo:hover {
+  color: #a26ca5;
+}
+
+.bloque-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.bloque-logo img {
+  width: 40px;
+  height: 40px;
+}

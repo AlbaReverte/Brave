@@ -1,0 +1,267 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background-color:  rgba(255, 253, 228, 0.85); */
+  margin: 0;
+  padding: 0;
+}
+
+.servicios-container {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  /* background: rgba(249, 248, 234, 0.85); */
+  border-radius: 28px;
+}
+
+.servicios-title {
+  background-color: black;
+  color: thistle;
+  border-radius: 15px;
+  padding: 25px 30px;
+  max-width: 70%;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(175, 0, 175, 0.3);
+  text-align: left;
+  font-family: "Arial", sans-serif;
+}
+
+.card-title {
+  color: rgb(213, 146, 220);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+.servicios-title-head {
+  color: thistle;
+  border-radius: 15px;
+  padding: 25px 30px;
+  max-width: 70%;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFade 1.5s ease forwards, colorPulse 3s ease-in-out infinite;
+}
+
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorPulse {
+  0% {
+    color: #dda0dd;
+  }
+  50% {
+    color: #ba55d3;
+  }
+  100% {
+    color: #dda0dd;
+  }
+}
+
+.servicios-title h2 {
+  color: #800080;
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.servicios-title ul {
+  list-style: none; /* elimina los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.servicios-title li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.servicios-title li strong {
+  color: #800080;
+}
+
+.footer {
+  background-color: black;
+  color: thistle;
+  text-align: center;
+  padding: 24px 0;
+  margin-top: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(128, 0, 128, 0.3);
+}
+
+.footer p {
+  margin: 20px 0 0 0; /* empuja el texto hacia abajo */
+  font-size: 14px;
+}
+
+.container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.servicios-list {
+  list-style: none;
+  padding: 0;
+}
+
+.servicio {
+  padding: 12px 16px;
+  /* border-bottom: 1px solid #eee; */
+}
+
+.servicio p {
+  margin: 0;
+}
+
+.borde {
+  border-radius: 25px;
+}
+
+.card-body {
+  background-color: black;
+  color: white;
+}
+
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+  display: block; /* convierte el botón en bloque */
+  margin: 0 auto; /* centrado horizontal */
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.card-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-hover {
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.card-hover:hover .img-hover {
+  filter: brightness(0.8);
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 250px; /* todas con la misma altura */
+  object-fit: cover; /* recorta la imagen manteniendo proporciones */
+}
+
+.my-btn {
+  display: block; /* convierte el botón en bloque */
+  margin: 0 auto; /* centrado horizontal */
+  width: 70%;
+  padding: 4px;
+  font-size: 14px;
+  background-color: #a26ca5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.my-btn:hover {
+  background-color: #613383;
+}
+
+.redes-sociales {
+  text-align: center; /* centra el bloque de iconos */
+  margin-top: 50px;
+  padding: 20px;
+  /* background-color: rgba(128, 0, 128, 0.1);  */
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconos-redes {
+  display: flex;
+  gap: 20px; /* separa los iconos */
+}
+
+.iconos-redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* tamaño de cada “botón” */
+  height: 50px;
+  background-color: rgba(128, 0, 128, 0.2);
+  color: #800080;
+  font-size: 22px;
+  border-radius: 50%; /* círculo */
+  transition: all 0.3s ease; /* animación suave */
+  text-decoration: none;
+}
+
+.iconos-redes a:hover {
+  background-color: rgba(128, 0, 128, 0.4); /* se oscurece al pasar el ratón */
+  transform: scale(1.2); /* ligero zoom */
+  color: white; /* icono cambia a blanco */
+}
+
+.col {
+  padding: 12px 20px;
+}
